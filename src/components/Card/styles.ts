@@ -29,10 +29,14 @@ export const CardContainer = styled.div`
   background: ${({ theme }) => theme.colors.blue.tertiary};
 
   picture {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
     width: 72px;
     height: 72px;
     background: ${({ theme }) => theme.colors.blue.primary};
     border-radius: 999px;
+    
   }
 
   h3 {
@@ -41,7 +45,7 @@ export const CardContainer = styled.div`
   }
 
   p {
-    color: #aaa;
     margin-top: 8px;
   }
+
 `

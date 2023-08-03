@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.0.10",
+    "@phosphor-icons/web": "^2.0.3",
     "@rocketseat/eslint-config": "^2.1.0",
+    "phosphor-icons": "^1.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^6.0.5"

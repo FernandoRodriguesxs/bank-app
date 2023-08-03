@@ -1,11 +1,22 @@
 import { CardContainer } from './styles'
+import { ReactNode } from 'react'
 
-export const Card = () => {
+
+
+interface ICardProps {
+  IconPicture: ReactNode
+  title: string
+  subtitle: string
+
+}
+export const Card = ({IconPicture, title, subtitle}: ICardProps) => {
   return (
     <CardContainer>
-      <picture></picture>
-      <h3>Multi Currency</h3>
-      <p>We realize ideas from simple</p>
+      <picture>
+        {IconPicture}
+      </picture>
+      <h3>{title}</h3>
+      <p>{subtitle}</p>
     </CardContainer>
   )
 }

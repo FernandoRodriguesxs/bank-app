@@ -80,3 +80,42 @@ export const CardsContainer = styled.section`
     grid-template-columns: 1fr;
   }
 `
+export const CreditCardSection = styled.section`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+  .credit-card-content {
+    h2 {
+      color: ${({ theme }) => theme.colors.blue.primary};
+      font-size: 32px;
+    }
+    
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      margin: 24px 0;
+      gap: 16px;
+
+      li {
+        display: flex;
+        gap: 8px;
+        
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: ${({ theme }) => theme.colors.purple.primary};
+          border-radius: 999px;
+          height: 24px;
+          width: 24px;
+          
+        }
+      }
+    }
+  }
+  
+
+`
