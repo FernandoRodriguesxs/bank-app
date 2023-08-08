@@ -1,7 +1,7 @@
 import heroImg from '././assets/hero-mobile2.png'
 import { Header } from './components/Header'
 import { ButtonStore } from './components/ButtonStore'
-import { ButtonGroup, CardsContainer, CardsSection, CreditCardSection, Hero, Wrapper } from './App.style'
+import { BoxQuestion, ButtonGroup, CardsContainer, CardsSection, CreditCardSection, DownloadMobileApp, Hero, Wrapper } from './App.style'
 import { Card } from './components/Card'
 import { Check, HandCoins } from "@phosphor-icons/react"
 import { Bank } from "@phosphor-icons/react"
@@ -11,6 +11,8 @@ import { DeviceMobileSpeaker } from "@phosphor-icons/react"
 import { GraduationCap } from "@phosphor-icons/react"
 import CreditCardImg from './assets/credit-card.png'
 import { Button } from './components/Button'
+import IphoneCardImg from './assets/iphone-card.png'
+import { ButtonPrimary } from './components/Button/styles'
 
 export const App = () => {
   return (
@@ -75,10 +77,37 @@ export const App = () => {
                 <span><Check size={16} color='white' /></span>
                   Earn increase Visa Card</li>
               </ul>
-              <Button type='primary'>Get Started</Button>
+              <ButtonPrimary>Get Started</ButtonPrimary>
           </div>
           
         </CreditCardSection>
+        </Wrapper>
+        <Wrapper>
+        <DownloadMobileApp>
+          <div className='mobile-content'>
+          <h2>Download <br/>the Mobile App</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </p>
+          <ButtonGroup>
+                <ButtonStore>
+                  <span>App store</span>
+                </ButtonStore>
+                <ButtonStore>
+                  <span>Play store</span>
+                </ButtonStore>
+              </ButtonGroup>
+              </div>
+              <picture>
+              <img src={IphoneCardImg} alt='Iphone Home' />
+              </picture>
+        </DownloadMobileApp>
+        </Wrapper>
+        <Wrapper>
+        <BoxQuestion>
+          <div className='Question-Text'>
+            <h2>Have any Questions?</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+          </div>
+        </BoxQuestion>
         </Wrapper>
       </main>
     </>

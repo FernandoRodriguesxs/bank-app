@@ -1,4 +1,4 @@
-import { Button } from '../Button'
+import { ButtonPrimary, ButtonText } from '../Button/styles'
 import { HeaderContainer, HeaderOptions, LogoBox } from './styles'
 
 export const Header = () => {
@@ -15,8 +15,8 @@ export const Header = () => {
           <li>Contact us</li>
         </HeaderOptions>
         <div>
-          <Button type="text">Log in</Button>
-          <Button type="primary">Sign up</Button>
+          <ButtonText>Log in</ButtonText>
+          <ButtonPrimary>Sign up</ButtonPrimary>
         </div>
       </nav>
     </HeaderContainer>

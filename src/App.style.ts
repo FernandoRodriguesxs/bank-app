@@ -116,6 +116,33 @@ export const CreditCardSection = styled.section`
       }
     }
   }
-  
-
 `
+export const DownloadMobileApp = styled.section`
+          display: flex;
+          margin-top: 64px;
+          justify-content: space-between;
+          align-items: center;
+
+        .mobile-content{
+          h2 {
+            color: ${({ theme }) => theme.colors.blue.primary};
+            font-size: 36px;
+          }
+        }
+        picture img{
+          width: 600px;
+        }
+`
+
+export const BoxQuestion = styled.section`
+        display: flex;
+        margin-top: 30px;
+        height: 150px;
+
+        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        
+        border-radius: 15px;
+
+        
+`
+
