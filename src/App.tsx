@@ -10,9 +10,9 @@ import { CreditCard } from "@phosphor-icons/react"
 import { DeviceMobileSpeaker } from "@phosphor-icons/react"
 import { GraduationCap } from "@phosphor-icons/react"
 import CreditCardImg from './assets/credit-card.png'
-import { Button } from './components/Button'
 import IphoneCardImg from './assets/iphone-card.png'
 import { ButtonPrimary } from './components/Button/styles'
+import IphoneBrancoImg from './assets/iphonebranco.png'
 
 export const App = () => {
   return (
@@ -103,9 +103,13 @@ export const App = () => {
         </Wrapper>
         <Wrapper>
         <BoxQuestion>
+          <picture>
+            <img src={IphoneBrancoImg} alt='Iphone Branco' />
+          </picture>
           <div className='Question-Text'>
             <h2>Have any Questions?</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+            
           </div>
         </BoxQuestion>
         </Wrapper>

@@ -136,13 +136,34 @@ export const DownloadMobileApp = styled.section`
 
 export const BoxQuestion = styled.section`
         display: flex;
-        margin-top: 30px;
-        height: 150px;
+        justify-content: space-around;
 
-        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        height: 300px;
+        margin-top: 30px;
+        
+        background: rgb(221,136,71);
+        background: linear-gradient(90deg, rgba(221,136,71,1) 0%, rgba(122,62,94,1) 51%, rgba(63,16,110,1) 79%);  
         
         border-radius: 15px;
 
+        .Question-Text{
+          width: 50%;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+
+          h2 {
+            
+            color: ${({ theme }) => theme.colors.white};
+            font-size: 36px;
+          }
+        }
+
+        picture img{
+          
+          width: 150px;
+          padding: 6px;
+        }
         
 `
 
