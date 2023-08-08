@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.header`
   height: 96px;
 
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -12,7 +16,7 @@ export const HeaderContainer = styled.header`
 `
 export const LogoBox = styled.div`
   p {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: ${({ theme }) => theme.colors.blue.primary};
   }
@@ -33,4 +37,7 @@ export const HeaderOptions = styled.ul`
     color: ${({ theme }) => theme.colors.yellow.primary};
   }
 `
-
+export const ButtonGroup = styled.div`
+  display: flex;
+  gap: 16px;
+`

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   max-width: 1280px;
-  padding: 0 48px;
+  padding: 32px;
   margin: 0 auto;
 `
 
@@ -16,11 +16,10 @@ export const Hero = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
 
     h1 {
       color: ${({ theme }) => theme.colors.blue.primary};
-      font-size: 56px;
+      font-size: 3.5rem;
       line-height: 64px;
     }
 
@@ -31,28 +30,30 @@ export const Hero = styled.div`
   }
 
   .hero-box-right {
-    width: 50%;
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
     img {
-      width: 300px;
+      height: 600px;
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
-`
-
-export const ButtonGroup = styled.div`
-  display: flex;
-  gap: 16px;
-
-  margin-top: 32px;
 `
 
 export const CardsSection = styled.section`
   display: flex;
   background: ${({ theme }) => theme.colors.blue.primary};
-  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  padding: 16px;
+  /* clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%); */
 
   .cards-section-content {
     display: flex;
@@ -62,7 +63,7 @@ export const CardsSection = styled.section`
     h2 {
       color: ${({ theme }) => theme.colors.white};
       margin-top: 150px;
-      font-size: 32px;
+      font-size: 2.25rem;
     }
   }
 `
@@ -70,6 +71,7 @@ export const CardsSection = styled.section`
 export const CardsContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   margin: 32px 0 128px;
 
   @media (max-width: 768px) {
@@ -82,16 +84,30 @@ export const CardsContainer = styled.section`
 `
 export const CreditCardSection = styled.section`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
+  margin: 72px 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  picture {
+    img {
+      height: 400px;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
 
   .credit-card-content {
     h2 {
       color: ${({ theme }) => theme.colors.blue.primary};
-      font-size: 32px;
+      font-size: 2.25rem;
     }
-    
+
     ul {
       display: flex;
       flex-direction: column;
@@ -102,7 +118,7 @@ export const CreditCardSection = styled.section`
       li {
         display: flex;
         gap: 8px;
-        
+
         span {
           display: flex;
           justify-content: center;
@@ -111,59 +127,112 @@ export const CreditCardSection = styled.section`
           border-radius: 999px;
           height: 24px;
           width: 24px;
-          
         }
       }
     }
   }
 `
 export const DownloadMobileApp = styled.section`
-          display: flex;
-          margin-top: 64px;
-          justify-content: space-between;
-          align-items: center;
+  display: flex;
+  justify-content: space-around;
 
-        .mobile-content{
-          h2 {
-            color: ${({ theme }) => theme.colors.blue.primary};
-            font-size: 36px;
-          }
-        }
-        picture img{
-          width: 600px;
-        }
+  margin: 72px 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  .download-mobile-app-content {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      color: ${({ theme }) => theme.colors.blue.primary};
+      font-size: 2.25rem;
+    }
+  }
+
+  picture {
+    width: 100%;
+
+    img {
+      width: 600px;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+`
+export const ButtonGroup = styled.div`
+  // entender qual o b.o
+  display: flex;
+  gap: 16px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  margin-top: 32px;
+`
+
+export const DownloadMobileButtonGroup = styled.div`
+  display: flex;
+  gap: 16px;
+
+  margin-top: 32px;
 `
 
 export const BoxQuestion = styled.section`
-        display: flex;
-        justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 
-        height: 300px;
-        margin-top: 30px;
-        
-        background: rgb(221,136,71);
-        background: linear-gradient(90deg, rgba(221,136,71,1) 0%, rgba(122,62,94,1) 51%, rgba(63,16,110,1) 79%);  
-        
-        border-radius: 15px;
+  color: ${({ theme }) => theme.colors.white};
 
-        .Question-Text{
-          width: 50%;
-          padding: 10px;
-          display: flex;
-          flex-direction: column;
+  height: 300px;
 
-          h2 {
-            
-            color: ${({ theme }) => theme.colors.white};
-            font-size: 36px;
-          }
-        }
+  @media (max-width: 768px) {
+    height: auto;
+  }
 
-        picture img{
-          
-          width: 150px;
-          padding: 6px;
-        }
-        
+  margin: 32px 0;
+
+  background: rgb(221, 136, 71);
+  background: linear-gradient(
+    90deg,
+    rgba(221, 136, 71, 1) 0%,
+    rgba(122, 62, 94, 1) 51%,
+    rgba(63, 16, 110, 1) 79%
+  );
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  padding: 16px;
+
+  .Question-Text {
+    max-width: 600px;
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    gap: 16px;
+
+    h2 {
+      font-size: 2.25rem;
+    }
+  }
+
+  picture {
+    margin-top: 16px;
+
+    img {
+      height: 450px;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
 `
-

@@ -36,7 +36,6 @@ export const CardContainer = styled.div`
     height: 72px;
     background: ${({ theme }) => theme.colors.blue.primary};
     border-radius: 999px;
-    
   }
 
   h3 {
@@ -47,5 +46,4 @@ export const CardContainer = styled.div`
   p {
     margin-top: 8px;
   }
-
 `

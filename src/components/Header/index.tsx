@@ -1,5 +1,5 @@
-import { ButtonPrimary, ButtonText } from '../Button/styles'
-import { HeaderContainer, HeaderOptions, LogoBox } from './styles'
+import { ButtonPrimary, ButtonText } from '../Button'
+import { ButtonGroup, HeaderContainer, HeaderOptions, LogoBox } from './styles'
 
 export const Header = () => {
   return (
@@ -14,10 +14,10 @@ export const Header = () => {
           <li>Pricing</li>
           <li>Contact us</li>
         </HeaderOptions>
-        <div>
+        <ButtonGroup>
           <ButtonText>Log in</ButtonText>
           <ButtonPrimary>Sign up</ButtonPrimary>
-        </div>
+        </ButtonGroup>
       </nav>
     </HeaderContainer>
   )
