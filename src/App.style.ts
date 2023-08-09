@@ -75,10 +75,6 @@ export const CardsContainer = styled.section`
   margin: 32px 0 128px;
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 380px) {
     grid-template-columns: 1fr;
   }
 `
@@ -164,7 +160,6 @@ export const DownloadMobileApp = styled.section`
   }
 `
 export const ButtonGroup = styled.div`
-  // entender qual o b.o
   display: flex;
   gap: 16px;
 
@@ -173,6 +168,12 @@ export const ButtonGroup = styled.div`
   }
 
   margin-top: 32px;
+
+  button {
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
 `
 
 export const DownloadMobileButtonGroup = styled.div`
@@ -180,6 +181,10 @@ export const DownloadMobileButtonGroup = styled.div`
   gap: 16px;
 
   margin-top: 32px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const BoxQuestion = styled.section`

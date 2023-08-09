@@ -25,12 +25,14 @@ import {
 import CreditCardImg from './assets/credit-card.png'
 import IphoneCardImg from './assets/iphone-card.png'
 import { ButtonPrimary, ButtonSecondary } from './components/Button'
+import { MobileHeader } from './components/MobileHeader'
 
 export const App = () => {
   return (
     <>
       <Wrapper>
         <Header />
+        <MobileHeader />
       </Wrapper>
       <main>
         <Wrapper>
