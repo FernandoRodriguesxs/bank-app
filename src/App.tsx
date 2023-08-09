@@ -9,6 +9,7 @@ import {
   CreditCardSection,
   DownloadMobileApp,
   DownloadMobileButtonGroup,
+  Footer,
   Hero,
   Wrapper,
 } from './App.style'
@@ -21,6 +22,11 @@ import {
   CreditCard,
   DeviceMobileSpeaker,
   GraduationCap,
+  TwitterLogo,
+  LinkedinLogo,
+  MetaLogo,
+  GooglePlayLogo,
+  AppStoreLogo,
 } from '@phosphor-icons/react'
 import CreditCardImg from './assets/credit-card.png'
 import IphoneCardImg from './assets/iphone-card.png'
@@ -48,9 +54,15 @@ export const App = () => {
               </p>
               <ButtonGroup>
                 <ButtonStore>
-                  <span>App store</span>
+                  <span>
+                    <AppStoreLogo size={24} />
+                  </span>
+                  <span>App Store</span>
                 </ButtonStore>
                 <ButtonStore>
+                  <span>
+                    <GooglePlayLogo size={24} />
+                  </span>
                   <span>Play store</span>
                 </ButtonStore>
               </ButtonGroup>
@@ -144,9 +156,15 @@ export const App = () => {
               </p>
               <DownloadMobileButtonGroup>
                 <ButtonStore>
-                  <span>App store</span>
+                  <span>
+                    <AppStoreLogo size={24} />
+                  </span>
+                  <span>App Store</span>
                 </ButtonStore>
                 <ButtonStore>
+                  <span>
+                    <GooglePlayLogo size={24} />
+                  </span>
                   <span>Play store</span>
                 </ButtonStore>
               </DownloadMobileButtonGroup>
@@ -173,6 +191,53 @@ export const App = () => {
           </BoxQuestion>
         </Wrapper>
       </main>
+      <Wrapper>
+        <Footer>
+          <div className="logo-footer">
+            <h2>Screder</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <ul className="social-media">
+              <li>
+                <MetaLogo size={24} />
+              </li>
+              <li>
+                <TwitterLogo size={24} />
+              </li>
+              <li>
+                <LinkedinLogo size={24} />
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Company</h2>
+            <ul>
+              <li>About</li>
+              <li>Terms of Use</li>
+              <li>Privacy Policy</li>
+              <li>How it Works</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Support</h2>
+            <ul>
+              <li>Support Carrer</li>
+              <li>24h Service</li>
+              <li>Quick Chat</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Contact</h2>
+            <ul>
+              <li>WathsApp</li>
+              <li>Support 24</li>
+            </ul>
+          </div>
+        </Footer>
+      </Wrapper>
     </>
   )
 }

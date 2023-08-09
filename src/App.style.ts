@@ -241,3 +241,64 @@ export const BoxQuestion = styled.section`
     }
   }
 `
+export const Footer = styled.footer`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+
+  margin-top: 32px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: ${({ theme }) => theme.colors.blue.primary};
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 16px;
+    font-size: 14px;
+    gap: 8px;
+
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+  }
+
+  .logo-footer {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+    h2 {
+      font-size: 32px;
+    }
+  }
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px;
+      border-radius: 6px;
+      background: #e1e1e9;
+    }
+  }
+`
