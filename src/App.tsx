@@ -32,6 +32,8 @@ import CreditCardImg from './assets/credit-card.png'
 import IphoneCardImg from './assets/iphone-card.png'
 import { ButtonPrimary, ButtonSecondary } from './components/Button'
 import { MobileHeader } from './components/MobileHeader'
+import 'animate.css/animate.min.css'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 export const App = () => {
   return (
@@ -72,48 +74,54 @@ export const App = () => {
             </picture>
           </Hero>
         </Wrapper>
+
         <CardsSection>
           <div className="cards-section-content">
             <h2>Screder Features</h2>
-            <CardsContainer>
-              <Card
-                IconPicture={<HandCoins size={56} />}
-                title="Multi Currency"
-                subtitle="We Realize ideias from simple toomplex. Read More"
-              />
-              <Card
-                IconPicture={<Bank size={56} />}
-                title="Multi Currency"
-                subtitle="We Realize ideias from simple toomplex. Read More"
-              />
-              <Card
-                IconPicture={<DeviceMobile size={56} />}
-                title="Multi Currency"
-                subtitle="We Realize ideias from simple toomplex. Read More"
-              />
-              <Card
-                IconPicture={<DeviceMobileSpeaker size={56} />}
-                title="Multi Currency"
-                subtitle="We Realize ideias from simple toomplex. Read More"
-              />
-              <Card
-                IconPicture={<CreditCard size={56} />}
-                title="Multi Currency"
-                subtitle="We Realize ideias from simple toomplex. Read More"
-              />
-              <Card
-                IconPicture={<GraduationCap size={56} />}
-                title="Multi Currency"
-                subtitle="We Realize ideias from simple toomplex. Read More"
-              />
-            </CardsContainer>
+            <ScrollAnimation animateIn="animate__fadeInUp">
+              <CardsContainer>
+                <Card
+                  IconPicture={<HandCoins size={56} />}
+                  title="Multi Currency"
+                  subtitle="We Realize ideias from simple toomplex. Read More"
+                />
+                <Card
+                  IconPicture={<Bank size={56} />}
+                  title="Multi Currency"
+                  subtitle="We Realize ideias from simple toomplex. Read More"
+                />
+                <Card
+                  IconPicture={<DeviceMobile size={56} />}
+                  title="Multi Currency"
+                  subtitle="We Realize ideias from simple toomplex. Read More"
+                />
+                <Card
+                  IconPicture={<DeviceMobileSpeaker size={56} />}
+                  title="Multi Currency"
+                  subtitle="We Realize ideias from simple toomplex. Read More"
+                />
+                <Card
+                  IconPicture={<CreditCard size={56} />}
+                  title="Multi Currency"
+                  subtitle="We Realize ideias from simple toomplex. Read More"
+                />
+                <Card
+                  IconPicture={<GraduationCap size={56} />}
+                  title="Multi Currency"
+                  subtitle="We Realize ideias from simple toomplex. Read More"
+                />
+              </CardsContainer>
+            </ScrollAnimation>
           </div>
         </CardsSection>
+
         <Wrapper>
           <CreditCardSection>
-            <picture>
-              <img src={CreditCardImg} alt="Cartão de Crédito" />
-            </picture>
+            <ScrollAnimation animateIn="animate__fadeInLeft">
+              <picture>
+                <img src={CreditCardImg} alt="Cartão de Crédito" />
+              </picture>
+            </ScrollAnimation>
             <div className="credit-card-content">
               <h2>
                 Get Physic Visa Card <br /> and Virtual Card
@@ -169,26 +177,30 @@ export const App = () => {
                 </ButtonStore>
               </DownloadMobileButtonGroup>
             </div>
-            <picture>
-              <img src={IphoneCardImg} alt="Iphone Home" />
-            </picture>
+            <ScrollAnimation animateIn="animate__fadeInRight">
+              <picture>
+                <img src={IphoneCardImg} alt="Iphone Home" />
+              </picture>
+            </ScrollAnimation>
           </DownloadMobileApp>
         </Wrapper>
         <Wrapper>
-          <BoxQuestion>
-            <picture>
-              <img src={heroImg} alt="Iphone Branco" />
-            </picture>
-            <div className="Question-Text">
-              <h2>Have any Questions?</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry`&apos;s standard
-                dummy text
-              </p>
-              <ButtonSecondary>Read FAQ&apos;s</ButtonSecondary>
-            </div>
-          </BoxQuestion>
+          <ScrollAnimation animateIn="animate__fadeInUp">
+            <BoxQuestion>
+              <picture>
+                <img src={heroImg} alt="Iphone Branco" />
+              </picture>
+              <div className="Question-Text">
+                <h2>Have any Questions?</h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the
+                  industry`&apos;s standard dummy text
+                </p>
+                <ButtonSecondary>Read FAQ&apos;s</ButtonSecondary>
+              </div>
+            </BoxQuestion>
+          </ScrollAnimation>
         </Wrapper>
       </main>
       <Wrapper>

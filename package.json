@@ -14,13 +14,16 @@
     "@phosphor-icons/react": "^2.0.10",
     "@phosphor-icons/web": "^2.0.3",
     "@rocketseat/eslint-config": "^2.1.0",
+    "animate.css": "^4.1.1",
     "phosphor-icons": "^1.4.2",
     "react": "^18.2.0",
+    "react-animate-on-scroll": "^2.1.7",
     "react-dom": "^18.2.0",
     "styled-components": "^6.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
+    "@types/react-animate-on-scroll": "^2.1.5",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
