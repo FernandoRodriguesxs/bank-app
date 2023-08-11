@@ -1,11 +1,13 @@
 import { ButtonPrimary, ButtonText } from '../Button'
 import { ButtonGroup, HeaderContainer, HeaderOptions, LogoBox } from './styles'
+import logoImg from './../../assets/logo.png'
 
 export const Header = () => {
   return (
     <HeaderContainer>
       <nav>
         <LogoBox>
+          <img src={logoImg} alt="" />
           <p>Screder</p>
         </LogoBox>
         <HeaderOptions>

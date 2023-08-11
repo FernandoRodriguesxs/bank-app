@@ -1,4 +1,7 @@
-import heroImg from '././assets/hero-mobile2.png'
+import heroImg from '././assets/hero-pic.png'
+import CreditCardImg from './assets/card-pic.png'
+import IphoneCardImg from './assets/mobile-pic.png'
+import logoImg from './assets/logo.png'
 import { Header } from './components/Header'
 import { ButtonStore } from './components/ButtonStore'
 import {
@@ -28,8 +31,6 @@ import {
   GooglePlayLogo,
   AppStoreLogo,
 } from '@phosphor-icons/react'
-import CreditCardImg from './assets/credit-card.png'
-import IphoneCardImg from './assets/iphone-card.png'
 import { ButtonPrimary, ButtonSecondary } from './components/Button'
 import { MobileHeader } from './components/MobileHeader'
 import 'animate.css/animate.min.css'
@@ -70,6 +71,13 @@ export const App = () => {
               </ButtonGroup>
             </div>
             <picture className="hero-box-right">
+              <div className="hero-box-right-circles">
+                <div className="circle circle-1">
+                  <div className="circle circle-2">
+                    <div className="circle circle-3" />
+                  </div>
+                </div>
+              </div>
               <img src={heroImg} alt="" />
             </picture>
           </Hero>
@@ -210,7 +218,10 @@ export const App = () => {
       <Wrapper>
         <Footer>
           <div className="logo-footer">
-            <h2>Screder</h2>
+            <div className="logo">
+              <img src={logoImg} alt="" />
+              <h2>Screder</h2>
+            </div>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
