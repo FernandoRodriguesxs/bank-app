@@ -12,6 +12,14 @@ export const MobileHeaderContainer = styled.header`
 `
 
 export const LogoBox = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  img {
+    height: 45px;
+    width: 45px;
+  }
   p {
     font-size: 1.5rem;
     font-weight: 700;
