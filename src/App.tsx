@@ -122,61 +122,65 @@ export const App = () => {
                 <img src={CreditCardImg} alt="Cartão de Crédito" />
               </picture>
             </ScrollAnimation>
-            <div className="credit-card-content">
-              <h2>
-                Get Physic Visa Card <br /> and Virtual Card
-              </h2>
-              <ul>
-                <li>
-                  <span>
-                    <Check size={16} color="white" />
-                  </span>
-                  Manage your expenses
-                </li>
-                <li>
-                  <span>
-                    <Check size={16} color="white" />
-                  </span>
-                  Gain security control against
-                </li>
-                <li>
-                  <span>
-                    <Check size={16} color="white" />
-                  </span>
-                  Earn increase Visa Card
-                </li>
-              </ul>
-              <ButtonPrimary>Get Started</ButtonPrimary>
-            </div>
+            <ScrollAnimation animateIn="animate__fadeInRight">
+              <div className="credit-card-content">
+                <h2>
+                  Get Physic Visa Card <br /> and Virtual Card
+                </h2>
+                <ul>
+                  <li>
+                    <span>
+                      <Check size={16} color="white" />
+                    </span>
+                    Manage your expenses
+                  </li>
+                  <li>
+                    <span>
+                      <Check size={16} color="white" />
+                    </span>
+                    Gain security control against
+                  </li>
+                  <li>
+                    <span>
+                      <Check size={16} color="white" />
+                    </span>
+                    Earn increase Visa Card
+                  </li>
+                </ul>
+                <ButtonPrimary>Get Started</ButtonPrimary>
+              </div>
+            </ScrollAnimation>
           </CreditCardSection>
         </Wrapper>
         <Wrapper>
           <DownloadMobileApp>
-            <div className="download-mobile-app-content">
-              <h2>
-                Download <br />
-                the Mobile App
-              </h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry`&apos;s standard
-                dummy text{' '}
-              </p>
-              <DownloadMobileButtonGroup>
-                <ButtonStore>
-                  <span>
-                    <AppStoreLogo size={24} />
-                  </span>
-                  <span>App Store</span>
-                </ButtonStore>
-                <ButtonStore>
-                  <span>
-                    <GooglePlayLogo size={24} />
-                  </span>
-                  <span>Play store</span>
-                </ButtonStore>
-              </DownloadMobileButtonGroup>
-            </div>
+            <ScrollAnimation animateIn="animate__fadeInLeft">
+              <div className="download-mobile-app-content">
+                <h2>
+                  Download <br />
+                  the Mobile App
+                </h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the
+                  industry`&apos;s standard dummy text{' '}
+                </p>
+                <DownloadMobileButtonGroup>
+                  <ButtonStore>
+                    <span>
+                      <AppStoreLogo size={24} />
+                    </span>
+                    <span>App Store</span>
+                  </ButtonStore>
+                  <ButtonStore>
+                    <span>
+                      <GooglePlayLogo size={24} />
+                    </span>
+                    <span>Play store</span>
+                  </ButtonStore>
+                </DownloadMobileButtonGroup>
+              </div>
+            </ScrollAnimation>
             <ScrollAnimation animateIn="animate__fadeInRight">
               <picture>
                 <img src={IphoneCardImg} alt="Iphone Home" />
