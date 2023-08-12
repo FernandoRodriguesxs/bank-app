@@ -50,9 +50,8 @@ export const App = () => {
                 Stronger Banking <br /> Greater Service
               </h1>
               <p>
-                A nossa instituição financeira oferece uma ampla variedade de
-                serviços, desde empréstimos e financiamentos até investimentos e
-                gestão de patrimônio.
+                Our financial institution offers a wide range of services, from
+                loans and financing to investments and wealth management.
               </p>
               <ButtonGroup>
                 <ButtonStore>
@@ -161,9 +160,9 @@ export const App = () => {
                   the Mobile App
                 </h2>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the
-                  industry`&apos;s standard dummy text{' '}
+                  Discover a new experience by downloading our amazing app!
+                  Availability of unique features, an intuitive interface and
+                  convenient access to essential services
                 </p>
                 <DownloadMobileButtonGroup>
                   <ButtonStore>
