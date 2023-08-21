@@ -10,7 +10,6 @@ export const Hero = styled.div`
   height: calc(100vh - 96px);
   display: flex;
   justify-content: space-between;
-  margin: 32px 0;
 
   .hero-box-left {
     display: flex;
@@ -32,6 +31,42 @@ export const Hero = styled.div`
   .hero-box-right {
     width: 100%;
 
+    .hero-box-right-circles {
+      position: relative;
+      height: 550px;
+      width: 550px;
+
+      .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 999px;
+      }
+
+      .circle-1 {
+        position: absolute;
+        height: 550px;
+        width: 550px;
+        background: rgba(245, 236, 242, 255);
+      }
+
+      .circle-2 {
+        height: 450px;
+        width: 450px;
+        background: rgba(225, 216, 232, 255);
+      }
+
+      .circle-3 {
+        height: 350px;
+        width: 350px;
+        background: rgba(222, 203, 222, 255);
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,6 +77,9 @@ export const Hero = styled.div`
 
     img {
       height: 600px;
+      position: absolute;
+      z-index: 999;
+
       @media (max-width: 768px) {
         display: none;
       }
@@ -53,7 +91,6 @@ export const CardsSection = styled.section`
   display: flex;
   background: ${({ theme }) => theme.colors.blue.primary};
   padding: 16px;
-  /* clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%); */
 
   .cards-section-content {
     display: flex;
@@ -80,7 +117,7 @@ export const CardsContainer = styled.section`
 `
 export const CreditCardSection = styled.section`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   margin: 72px 0;
@@ -257,7 +294,6 @@ export const Footer = styled.footer`
   }
 
   h2 {
-    margin-bottom: 16px;
     font-size: 18px;
     color: ${({ theme }) => theme.colors.blue.primary};
 
@@ -283,8 +319,25 @@ export const Footer = styled.footer`
     @media (max-width: 768px) {
       text-align: center;
     }
-    h2 {
-      font-size: 32px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+
+      img {
+        height: 45px;
+        width: 45px;
+      }
     }
   }
   .social-media {
