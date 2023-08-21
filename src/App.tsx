@@ -162,7 +162,7 @@ export const App = () => {
                 <p>
                   Discover a new experience by downloading our amazing app!
                   Availability of unique features, an intuitive interface and
-                  convenient access to essential servicess
+                  convenient access to essential services
                 </p>
                 <DownloadMobileButtonGroup>
                   <ButtonStore>
